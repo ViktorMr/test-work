@@ -1,0 +1,310 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    transition: all 0.7s;
+}
+
+
+nav {
+    background-color: #5c1d6f;
+    width: 100%;
+}
+
+nav ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    margin: 5px 10px;
+    list-style-type: none;
+    float: left;
+}
+
+nav li button  {
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+    color: #ffffff;
+    font-size: 20px;
+}
+
+nav li button:hover {
+    text-decoration: none;
+    color: #9dd4a4;
+}
+
+nav li button:active {
+    border-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* stars */
+
+.rating {
+    margin: 350px auto;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    width: 300px;
+}
+
+
+.rating label {
+    color: #b6b3bc;
+    transition: all 0.2s;
+}
+
+input {
+    transform: scale(0);
+}
+
+.rating span {
+    font-size: 30px;
+}
+
+/* hover */
+
+#star1:hover ~ label {
+    color: #37373b;
+}
+
+#star2:hover ~ label {
+    color: #37373b;
+}
+
+#star3:hover ~ label {
+    color: #37373b;
+}
+
+#star4:hover ~ label {
+    color: #37373b;
+}
+
+#star5:hover ~ label {
+    color: #37373b;
+}
+
+
+/* checked */
+
+
+#star1:checked ~ label {
+    color: #37373b;
+}
+
+#star2:checked ~ label {
+    color: #37373b;
+}
+
+#star3:checked ~ label {
+    color: #37373b;
+}
+
+#star4:checked ~ label {
+    color: #37373b;
+}
+
+#star5:checked ~ label {
+    color: #37373b;
+}
+
+/* stars end */
+
+/* checkout */
+
+.checkout {
+    padding: 10px;
+    position: absolute;
+    right: 30px;
+    width: 400px;
+    height: 200px;
+    display: none;
+    background-color: #f6f6f6;
+    border: 2px solid #686868;
+}
+
+
+#cart-btn:hover ~ .checkout, .checkout:hover {
+    transition: all 0.7s;
+    display: block;
+    z-index: 999;
+}
+
+#buy {
+    padding-top: 4px;
+    text-align: center;
+    height: 30px;
+    width: 150px;
+    display: block;
+    margin: 120px 20px;
+    color: #c31f03;
+    background-color: white;
+    outline: 2px auto #c31f03;
+}
+
+.checkout span {
+    color: red;
+    text-align: center;
+    font-size: 17px;
+}
+
+/* checkour-block */
+
+#checkout-block {
+    margin-left: 38%;
+    position: absolute;
+    top: 60vh;
+    display: block;
+    width: 300px;
+    height: 100px;
+    border: 1px solid #c42f21;
+    background-color: #f3f3f3;
+}
+
+#checkout-block a {
+    float: right;
+    margin: 3px 3px 0 0;
+}
+
+#checkout-block div {
+    display: block;
+    margin: 35px auto 0 auto;
+    width: 50%;
+}
+
+#pod-block {
+    z-index: 999;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    display: none;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+#pod-block:target {
+    display: block;
+}
+
+/* end checkour-block */
+
+/* end checkout */
+
+/*checkbox */
+
+.checkbox {
+    width: 20%;
+    border: 2px solid #4b4b4b;
+    margin: 70px auto;
+}
+
+.checkbox li {
+    list-style-type: none;
+}
+
+.text-check {
+    margin-left: 7px;
+}
+
+.castom-check {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: #dddddd;
+    border: 2px solid #d1141e;
+    border-radius: 3px;
+}
+
+.text-check, .castom-check {
+    /*margin-top: 10px;*/
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#ok {
+    transform: scale(0);
+    position: absolute;
+    top: -8px;
+
+}
+
+#filter1:checked ~ span #ok {
+    transform: scale(1);
+    color: #23d11a;
+    font-size: 25px;
+}
+
+#filter2:checked ~ span #ok {
+    transform: scale(1);
+    color: #23d11a;
+    font-size: 25px;
+}
+
+#filter3:checked ~ span #ok {
+    transform: scale(1);
+    color: #23d11a;
+    font-size: 25px;
+}
+
+.checkbox label:hover  #ok {
+    transform: scale(1);
+    color: #5d5d5d;
+    font-size: 25px;
+}
+
+
+/* end checkbox */
+
+#drop-down li {
+    clear: both;
+}
+
+#drop-down li a {
+    text-decoration: none;
+    color: #444444;
+    font-weight: bold;
+}
+
+#drop-bth span {
+    font-size: 15px;
+}
+
+#drop-down {
+    transition: all 0.7s;
+    border: 2px solid #444444;
+    border-radius: 4px;
+    padding: 15px;
+    display: none;
+    position: absolute;
+    width: 200px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,e5e5e5+100;White+3D */
+    background: #ffffff; /* Old browsers */
+    background: -moz-linear-gradient(top, #ffffff 0%, #e5e5e5 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #ffffff 0%,#e5e5e5 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #ffffff 0%,#e5e5e5 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+}
+
+#drop-bth:hover ~ #drop-down, #drop-down:hover, #dropdown2:hover {
+    display: block;
+    z-index: 9999;
+}
+
+#dropdown2 {
+    display: none;
+
+}
+
+#drop-down li:hover #dropdown2 {
+    /*transform: scale(1);*/
+    display: inline;
+}
+
+
+
+
+
+
